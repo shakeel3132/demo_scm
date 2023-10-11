@@ -21,10 +21,5 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                sh './deploy.sh' // Deploy your application using a custom deployment script
-            }
-        }
     }
 }
