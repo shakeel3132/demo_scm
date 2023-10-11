@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', changelog: false, credentialsId: 'git-credential', poll: false, url: 'https://github.com/shakeel3132/demo_scm'
+                //git branch: 'main', changelog: false, credentialsId: 'git-credential', poll: false, url: 'https://github.com/shakeel3132/demo_scm'
+                checkout scm
             }
         }
         
