@@ -26,8 +26,8 @@ pipeline {
     steps {
         emailext (
             to: 'shakils7799@gmail.com',
-            subject: 'Deployment Status',
-            body: 'The deployment was successful!'
+            subject: 'build status',
+            body: 'The build was successful!'
         )
     }
 }
